@@ -66,16 +66,16 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <article className="vr-section">
+      <article className="vr-section px-5 py-12 flex flex-col gap-5 text-center">
         <div className="image-container">
           <picture>
             <source srcSet={vr_desktop} media="(min-width: 1440px)" />
             <img src={vr_mobile} alt="" />
           </picture>
         </div>
-        <div className="contents">
-          <h2>The leader in interactive vr</h2>
-          <p>
+        <div className="content flex flex-col gap-4 ">
+          <h2 className="text-4xl uppercase">The leader in interactive vr</h2>
+          <p className="text-lg">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -83,17 +83,23 @@ export default function Home() {
           </p>
         </div>
       </article>
-      <section>
-        <h2>Our Creations</h2>
-        {creationCards.map((creationCard) => {
-          return (
-            <CreationCard
-              key={creationCard.title}
-              creationCard={creationCard}
-            />
-          );
-        })}
-        <button>See All</button>
+      <section className="p-5 flex flex-col gap-5 font-[JosefinSans] uppercase">
+        <h2 className="text-center text-4xl font-[JosefinSans] uppercase">
+          Our Creations
+        </h2>
+        <div className="cards-container">
+          {creationCards.map((creationCard) => {
+            return (
+              <CreationCard
+                key={creationCard.title}
+                creationCard={creationCard}
+              />
+            );
+          })}
+        </div>
+        <button className="border px-7 py-1.5 tracking-widest self-center">
+          See All
+        </button>
       </section>
       <Footer />
     </>

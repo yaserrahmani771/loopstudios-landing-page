@@ -2,8 +2,8 @@ import logo from "../assets/images/logo.svg";
 import menu_icon from "../assets/images/icon-hamburger.svg";
 export default function Header() {
   return (
-    <header>
-      <div className="left">
+    <header className="flex justify-between items-center ">
+      <div className="left w-40">
         <img src={logo} alt="" />
       </div>
       <div className="right">

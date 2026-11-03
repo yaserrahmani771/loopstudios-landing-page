@@ -7,13 +7,13 @@ import instagram_icon from "../assets/images/icon-instagram.svg";
 
 export function Footer() {
   return (
-    <footer>
-      <div className="left">
+    <footer className="bg-black text-white flex flex-col gap-6 text-center items-center py-10">
+      <div className="left flex flex-col gap-5">
         <div className="top">
           <img src={logo} alt="" />
         </div>
         <div className="bottom">
-          <ul>
+          <ul className="flex flex-col gap-2">
             <li>
               <Link>About</Link>
             </li>
@@ -32,9 +32,9 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="right">
+      <div className="right flex flex-col gap-5 items-center">
         <div className="top">
-          <ul>
+          <ul className="flex gap-4">
             <li>
               <Link>
                 <img src={facebook_icon} alt="" />
@@ -58,7 +58,9 @@ export function Footer() {
           </ul>
         </div>
         <div className="bottom">
-          <p>&copy; 2021 Loopstudios. All rights reserved.</p>
+          <p className="text-sm text-white/50">
+            &copy; 2021 Loopstudios. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

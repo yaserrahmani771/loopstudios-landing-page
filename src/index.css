@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+.background {
+  background-image: var(--mobile-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 90rem) {
+  .background {
+    background-image: var(--desktop-bg);
+    ;
+  }
+}
+
+@theme{
+    --breakpoint-3xl: 90rem;
+}
+
+@font-face {
+    font-family: Alata;
+    src: url(assets/fonts/Alata-Regular.ttf);
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url(assets/fonts/JosefinSans-Regular.ttf);
+}
