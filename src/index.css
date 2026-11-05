@@ -26,3 +26,8 @@
     font-family: JosefinSans;
     src: url(assets/fonts/JosefinSans-Regular.ttf);
 }
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
