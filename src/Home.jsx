@@ -66,28 +66,32 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <article className="vr-section px-5 py-12 flex flex-col gap-5 text-center">
-        <div className="image-container">
-          <picture>
-            <source srcSet={vr_desktop} media="(min-width: 1440px)" />
-            <img src={vr_mobile} alt="" />
-          </picture>
-        </div>
-        <div className="content flex flex-col gap-4 ">
-          <h2 className="text-4xl uppercase">The leader in interactive vr</h2>
-          <p className="text-lg">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
+      <article className="vr-section px-5 py-12 text-center 3xl:py-25">
+        <div className="container flex flex-col gap-5 3xl:flex-row 3xl:relative">
+          <div className="image-container 3xl:w-3/4">
+            <picture>
+              <source srcSet={vr_desktop} media="(min-width: 1440px)" />
+              <img src={vr_mobile} alt="" />
+            </picture>
+          </div>
+          <div className="content bg-white flex flex-col gap-4 3xl:w-3/5 3xl:absolute 3xl:right-0 3xl:top-40 3xl:p-20 3xl:gap-10">
+            <h2 className="text-4xl uppercase 3xl:text-5xl">
+              The leader in interactive vr
+            </h2>
+            <p className="text-lg 3xl:text-left">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
         </div>
       </article>
       <section className="p-5 flex flex-col gap-5 font-[JosefinSans] uppercase">
         <h2 className="text-center text-4xl font-[JosefinSans] uppercase">
           Our Creations
         </h2>
-        <div className="cards-container">
+        <div className="cards-container container 3xl:grid 3xl:grid-cols-4 3xl:gap-5">
           {creationCards.map((creationCard) => {
             return (
               <CreationCard
