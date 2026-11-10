@@ -45,19 +45,29 @@ export default function Header({ menuOpen, setMenuOpen }) {
       <nav className="hidden lg:block">
         <ul className="flex text-white gap-7">
           <li>
-            <Link>About</Link>
+            <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+              About
+            </Link>
           </li>
           <li>
-            <Link>Careers</Link>
+            <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+              Careers
+            </Link>
           </li>
           <li>
-            <Link>Events</Link>
+            <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+              Events
+            </Link>
           </li>
           <li>
-            <Link>Products</Link>
+            <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+              Products
+            </Link>
           </li>
           <li>
-            <Link>Support</Link>
+            <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+              Support
+            </Link>
           </li>
         </ul>
       </nav>

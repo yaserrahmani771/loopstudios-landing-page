@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
   .background {
     background-image: var(--desktop-bg);
     ;

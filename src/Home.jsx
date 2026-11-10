@@ -102,7 +102,7 @@ export default function Home() {
               );
             })}
           </div>
-          <button className="border px-7 py-1.5 tracking-widest justify-self-center lg:justify-self-end lg:row-start-1 lg:col-start-2">
+          <button className="border px-7 py-1.5 tracking-widest justify-self-center lg:justify-self-end lg:row-start-1 lg:col-start-2 cursor-pointer hover:text-white hover:border-white hover:bg-black">
             See All
           </button>
         </div>

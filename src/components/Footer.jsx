@@ -16,43 +16,53 @@ export function Footer() {
           <div className="bottom">
             <ul className="flex flex-col gap-2 lg:flex-row lg:gap-7">
               <li>
-                <Link>About</Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                  About
+                </Link>
               </li>
               <li>
-                <Link>Careers</Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                  Careers
+                </Link>
               </li>
               <li>
-                <Link>Events</Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                  Events
+                </Link>
               </li>
               <li>
-                <Link>Products</Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                  Products
+                </Link>
               </li>
               <li>
-                <Link>Support</Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
+                  Support
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="right flex flex-col gap-5 items-center lg:items-end">
           <div className="top">
-            <ul className="flex gap-4">
+            <ul className="flex gap-4 items-center">
               <li>
-                <Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                   <img src={facebook_icon} alt="" />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                   <img src={twitter_icon} alt="" />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                   <img src={pinterest_icon} alt="" />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link className="relative inline-block pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full">
                   <img src={instagram_icon} alt="" />
                 </Link>
               </li>

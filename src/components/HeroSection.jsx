@@ -1,10 +1,25 @@
 import Header from "./Header";
 import hero_bg_mobile from "../assets/images/mobile/image-hero.jpg";
 import hero_bg_desktop from "../assets/images/desktop/image-hero.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function HeroSection() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const handleBreakpointChange = (e) => {
+      if (e.matches) {
+        setMenuOpen(false);
+      }
+    };
+    mediaQuery.addEventListener("change", handleBreakpointChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleBreakpointChange);
+    };
+  }, []);
+
   return (
     <section
       className={` px-5 py-10 ${menuOpen ? "bg-black" : "background"} lg:py-15 xl:py-20`}
