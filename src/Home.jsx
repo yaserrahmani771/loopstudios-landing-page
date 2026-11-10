@@ -67,18 +67,18 @@ export default function Home() {
     <>
       <HeroSection />
       <article className="vr-section px-5 py-12 text-center 3xl:py-25">
-        <div className="container flex flex-col gap-5 3xl:flex-row 3xl:relative">
-          <div className="image-container 3xl:w-3/4">
+        <div className="container flex flex-col gap-5 lg:flex-row lg:gap-10 3xl:relative">
+          <div className="image-container lg:w-1/2 3xl:w-3/4 mx-auto lg:mx-0">
             <picture>
               <source srcSet={vr_desktop} media="(min-width: 1440px)" />
               <img src={vr_mobile} alt="" />
             </picture>
           </div>
-          <div className="content bg-white flex flex-col gap-4 3xl:w-3/5 3xl:absolute 3xl:right-0 3xl:top-40 3xl:p-20 3xl:gap-10">
-            <h2 className="text-4xl uppercase 3xl:text-5xl">
+          <div className="content bg-white flex flex-col gap-4 lg:w-1/2 lg:pt-15 xl:pt-20 3xl:w-3/5 3xl:absolute 3xl:right-0 3xl:top-40 3xl:p-20 3xl:gap-10">
+            <h2 className="text-4xl uppercase lg:text-5xl">
               The leader in interactive vr
             </h2>
-            <p className="text-lg 3xl:text-left">
+            <p className="text-lg lg:text-left">
               Founded in 2011, Loopstudios has been producing world-class
               virtual reality projects for some of the best companies around the
               globe. Our award-winning creations have transformed businesses
@@ -87,23 +87,25 @@ export default function Home() {
           </div>
         </div>
       </article>
-      <section className="p-5 flex flex-col gap-5 font-[JosefinSans] uppercase">
-        <h2 className="text-center text-4xl font-[JosefinSans] uppercase">
-          Our Creations
-        </h2>
-        <div className="cards-container container 3xl:grid 3xl:grid-cols-4 3xl:gap-5">
-          {creationCards.map((creationCard) => {
-            return (
-              <CreationCard
-                key={creationCard.title}
-                creationCard={creationCard}
-              />
-            );
-          })}
+      <section className="p-5  font-[JosefinSans] uppercase">
+        <div className="container mx-auto grid grid-cols-1 gap-5 xl:grid-cols-2 xl:">
+          <h2 className="text-center text-4xl font-[JosefinSans] uppercase lg:col-start-1 lg:row-start-1 lg:self-center lg:text-left">
+            Our Creations
+          </h2>
+          <div className="cards-container lg:grid lg:grid-cols-4 gap-5 lg:row-start-2 lg:row-end-3 lg:col-span-2">
+            {creationCards.map((creationCard) => {
+              return (
+                <CreationCard
+                  key={creationCard.title}
+                  creationCard={creationCard}
+                />
+              );
+            })}
+          </div>
+          <button className="border px-7 py-1.5 tracking-widest justify-self-center lg:justify-self-end lg:row-start-1 lg:col-start-2">
+            See All
+          </button>
         </div>
-        <button className="border px-7 py-1.5 tracking-widest self-center">
-          See All
-        </button>
       </section>
       <Footer />
     </>

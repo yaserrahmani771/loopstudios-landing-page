@@ -8,13 +8,13 @@ import instagram_icon from "../assets/images/icon-instagram.svg";
 export function Footer() {
   return (
     <footer className="bg-black text-white py-10">
-      <div className="container flex flex-col gap-6 text-center items-center 3xl:flex-row 3xl:justify-between">
+      <div className="container flex flex-col gap-6 text-center items-center lg:flex-row lg:justify-between">
         <div className="left flex flex-col gap-5">
           <div className="top">
             <img src={logo} alt="" />
           </div>
           <div className="bottom">
-            <ul className="flex flex-col gap-2 3xl:flex-row 3xl:gap-7">
+            <ul className="flex flex-col gap-2 lg:flex-row lg:gap-7">
               <li>
                 <Link>About</Link>
               </li>
@@ -33,7 +33,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="right flex flex-col gap-5 items-center 3xl:items-end">
+        <div className="right flex flex-col gap-5 items-center lg:items-end">
           <div className="top">
             <ul className="flex gap-4">
               <li>

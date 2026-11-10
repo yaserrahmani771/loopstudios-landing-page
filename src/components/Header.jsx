@@ -10,7 +10,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
       <div className="left w-40">
         <img src={logo} alt="" />
       </div>
-      <div className="right 3xl:hidden">
+      <div className="right lg:hidden">
         <div
           onClick={() => {
             menuOpen ? setMenuOpen(false) : setMenuOpen(true);
@@ -21,7 +21,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
         </div>
       </div>
       {menuOpen && (
-        <div className="absolute top-15 3xl:hidden">
+        <div className="absolute top-15 lg:hidden">
           <ul className="flex flex-col text-white font-[JosefinSans] uppercase text-xl gap-3">
             <li>
               <Link>About</Link>
@@ -42,7 +42,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
         </div>
       )}
 
-      <nav className="hidden 3xl:block">
+      <nav className="hidden lg:block">
         <ul className="flex text-white gap-7">
           <li>
             <Link>About</Link>
