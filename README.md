@@ -1,16 +1,114 @@
-# React + Vite
+# Loopstudios Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive landing page for Loopstudios, built with React and Tailwind CSS. This project focuses on creating a modern, clean, and responsive user interface that adapts to different screen sizes.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Demo](https://yaserrahmani771.github.io/loopstudios-landing-page/)
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** – For building reusable UI components.
+- **Tailwind CSS** – For styling and responsive layouts.
+- **JavaScript (ES6+)** – For interactive functionality.
+- **HTML5** – For the page structure.
+- **Vite** – For the development environment.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive landing page.
+- Mobile-friendly navigation menu.
+- Interactive hero section.
+- VR introduction section.
+- Creations gallery with responsive images.
+- Reusable React components.
+- Responsive layouts for mobile, tablet, and desktop screens.
+- Hover effects and smooth UI interactions.
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/
+│   └── images/
+│       ├── desktop/
+│       └── mobile/
+├── components/
+│   ├── CreationCard.jsx
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   └── HeroSection.jsx
+├── Home.jsx
+└── main.jsx
+```
+
+## ⚙️ Getting Started
+
+Follow these instructions to run the project locally.
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yaserrahmani771/loopstudios-landing-page.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd loopstudios-landing-page
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL provided by Vite in your browser.
+
+## 📱 Responsive Design
+
+The landing page is designed to provide a consistent user experience across different screen sizes:
+
+- Mobile devices
+- Tablets
+- Desktop computers
+- Large screens
+
+## 📚 What I Learned
+
+Through this project, I practiced:
+
+- Building reusable components with React.
+- Managing component state with `useState`.
+- Using `useEffect` for responsive navigation behavior.
+- Working with responsive images using the HTML `picture` element.
+- Styling layouts with Tailwind CSS.
+- Organizing project files and assets.
+- Creating responsive grid and flexbox layouts.
+
+## 👨‍💻 Author
+
+**Yaser Rahmani**
+
+- GitHub: [@yaserrahmani771](https://github.com/yaserrahmani771)
+
+---
+
+⭐ If you like this project, feel free to give it a star!
+
+> > > > > > > ee697e1352e298c79f59ea95a70dcb614d10f80d
