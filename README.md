@@ -4,7 +4,7 @@ A responsive landing page for Loopstudios, built with React and Tailwind CSS. Th
 
 ## 🚀 Live Demo
 
-https://yasserrahmani771.github.io/loopstudios-landing-page/
+[View Live Demo](https://yaserrahmani771.github.io/loopstudios-landing-page/)
 
 ## 🛠️ Built With
 
@@ -57,7 +57,7 @@ Follow these instructions to run the project locally.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/loopstudios-landing-page.git
+   git clone https://github.com/yaserrahmani771/loopstudios-landing-page.git
    ```
 
 2. Navigate to the project directory:
