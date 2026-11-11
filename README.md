@@ -105,7 +105,7 @@ Through this project, I practiced:
 
 **Yaser Rahmani**
 
-- GitHub: [@YOUR-USERNAME](https://github.com/yaserrahmani771)
+- GitHub: [@yaserrahmani771](https://github.com/yaserrahmani771)
 
 ---
 
